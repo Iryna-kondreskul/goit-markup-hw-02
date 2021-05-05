@@ -1,0 +1,76 @@
+/* переменные для основного цвета текста */
+:root {
+  --primary-text-color: #212121;
+  --titel-text-color: #757575;
+  --accent-color: #2196f3;
+  --maket-color: #e5e5e5;
+  --section-dark-color: #2f303a;
+  --color-main-button: #ffffff;
+  --bac-color-buttons: #f5f4fa;
+}
+
+/* в body задаем цвет странички и цвет шрифта, стиль шрифта */
+body {
+  background-color: var(--maket-color);
+  color: var(--titel-text-color);
+  font-family: Roboto;
+}
+
+/* цвет для ссылки mail*/
+.mail {
+  color: var(--accent-color);
+}
+/* При наведении на ссылку она подсвесивается */
+.site-nav .mail:hover,
+.site-nav .mail:focus .site-nav .phone:hover,
+.site-nav .phone:focus {
+  color: red;
+}
+/* текущая страничка активна */
+.site-nav .top-line.current {
+  color: var(--accent-color);
+}
+/*  цвет для ссылки phone*/
+.phone {
+  color: var(--titel-text-color);
+}
+/* цвет для портфолио и контакты */
+.top-line {
+  color: var(--primary-text-color);
+}
+
+/* цвет для контактов в футере */
+.contacts {
+  color: var(--color-main-button);
+}
+/* подсвечивается адрес в футере*/
+.contacts:hover {
+  color: var(--accent-color);
+}
+/* сброс точек в li */
+.list {
+  list-style: none;
+}
+
+/* цвет текста заголовкой */
+h1,
+h2,
+h3 {
+  color: var(--primary-text-color);
+}
+/* цвет текста параграфов */
+p {
+  color: var(--titel-text-color);
+}
+
+/* главная кнопка */
+.main-button {
+  color: var(--color-buttons);
+  background-color: var(--accent-color);
+}
+
+/* второстепенные кнопки */
+.buttons {
+  color: var(--primary-text-color);
+  background-color: var(--bac-color-buttons);
+}
