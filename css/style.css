@@ -137,6 +137,7 @@ h3 {
 
   color: var(--color-main-button);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Внимание к деталям */
@@ -231,6 +232,7 @@ specialists .specialists {
 
   color: var(--color-main-button);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 .list-btn {
   font-weight: 500;
@@ -241,6 +243,7 @@ specialists .specialists {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 
 /* ================ end main portfolio ================= */
