@@ -13,64 +13,234 @@
 body {
   background-color: var(--maket-color);
   color: var(--titel-text-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
-/* цвет для ссылки mail*/
-.mail {
+/*  текущая страничка активна*/
+.header .activ-list {
   color: var(--accent-color);
 }
-/* При наведении на ссылку она подсвесивается */
-.site-nav .mail:hover,
-.site-nav .mail:focus .site-nav .phone:hover,
-.site-nav .phone:focus {
-  color: red;
-}
-/* текущая страничка активна */
-.site-nav .top-line.current {
-  color: var(--accent-color);
-}
-/*  цвет для ссылки phone*/
-.phone {
-  color: var(--titel-text-color);
-}
-/* цвет для портфолио и контакты */
-.top-line {
-  color: var(--primary-text-color);
+/* Отменяем подчеркивание у ссылки */
+.a {
+  text-decoration: none;
 }
 
-/* цвет для контактов в футере */
-.contacts {
-  color: var(--color-main-button);
-}
-/* подсвечивается адрес в футере*/
-.contacts:hover {
-  color: var(--accent-color);
-}
 /* сброс точек в li */
 .list {
   list-style: none;
 }
 
-/* цвет текста заголовкой */
+/* цвет текста заголовков */
 h1,
 h2,
 h3 {
   color: var(--primary-text-color);
 }
-/* цвет текста параграфов */
-p {
-  color: var(--titel-text-color);
+
+/* ====================== header ================= */
+
+/* WebStudio */
+.logo-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
 }
 
-/* главная кнопка */
-.main-button {
-  color: var(--color-buttons);
+/* Активная ссылка - студия */
+.activ {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+/*  Портфолио  */
+.activ-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.activ-list:focus,
+.activ-list:hover {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--accent-color);
+}
+/* E-mail */
+.mail-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+/* Tel */
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--titel-text-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+/*  ==================== end header ==============*/
+
+/* ===================== main  =================  */
+
+/* Эффективные решения для вашего бизнеса */
+.efect {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-main-button);
+}
+
+/* Заказать услугу */
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  letter-spacing: 0.06em;
+
+  color: var(--color-main-button);
   background-color: var(--accent-color);
 }
 
-/* второстепенные кнопки */
-.buttons {
-  color: var(--primary-text-color);
-  background-color: var(--bac-color-buttons);
+/* Внимание к деталям */
+.features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
+
+/* Описание  */
+.description {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--titel-text-color);
+}
+
+/* /* Чем мы занимаемся */
+.classes {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* surname */
+.surname {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+specialists .specialists {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* =================== end main =================*/
+
+/* =================== footer ===================*/
+/* address */
+.adres {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--color-main-button);
+}
+.adres:hover,
+.adres:focus {
+  color: var(--accent-color);
+}
+/* =================== end footer ============= */
+
+/* ================ main portfolio ================= */
+/* виды работ */
+.types-of-jobs {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+/* work */
+.work {
+  font-size: 16px;
+  line-height: 1.9;
+
+  letter-spacing: 0.03em;
+
+  color: var(--titel-text-color);
+}
+
+/* кнопки */
+.main-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-main-button);
+  background-color: var(--accent-color);
+}
+.list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* ================ end main portfolio ================= */
