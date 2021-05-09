@@ -20,6 +20,7 @@ body {
 .header .activ-list {
   color: var(--accent-color);
 }
+
 /* Отменяем подчеркивание у ссылки */
 .a {
   text-decoration: none;
