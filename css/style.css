@@ -17,7 +17,7 @@ body {
 }
 
 /*  текущая страничка активна*/
-.header .activ-list {
+.header .activ-list .footer-contact {
   color: var(--accent-color);
 }
 
@@ -113,6 +113,9 @@ h3 {
 /*  ==================== end header ==============*/
 
 /* ===================== main  =================  */
+.site-main {
+  background-color: var(--section-dark-color);
+}
 
 /* Эффективные решения для вашего бизнеса */
 .efect {
@@ -189,16 +192,33 @@ specialists .specialists {
 
 /* =================== footer ===================*/
 /* address */
-.adres {
+.site-footer {
+  background-color: var(--section-dark-color);
+}
+
+.footer-link {
+  color: var(--color-main-button);
+
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
-
-  color: var(--color-main-button);
+  text-decoration: none;
 }
-.adres:hover,
-.adres:focus {
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--accent-color);
+}
+
+.footer-contact {
+  color: var(--color-main-button);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0/03em;
+  text-decoration: none;
+}
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--accent-color);
 }
 /* =================== end footer ============= */
