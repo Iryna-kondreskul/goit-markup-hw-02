@@ -246,14 +246,6 @@ specialists .specialists {
   color: var(--titel-text-color);
 }
 
-/* класс для секции 
-*/
-/* .Sections-colors {
-} */
-/* класс для списка кнопок */
-/* .filter-option-btn {
-} */
-
 /* кнопки */
 .filter-btn {
   font-weight: 500;
