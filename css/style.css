@@ -252,7 +252,7 @@ specialists .specialists {
 }
 
 /* кнопки */
-.list-btn {
+.filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -263,5 +263,12 @@ specialists .specialists {
   color: var(--primary-text-color);
   cursor: pointer;
 }
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--bac-color-buttons);
+}
 
+.filter-option {
+}
 /* ================ end main portfolio ================= */
