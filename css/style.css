@@ -3,7 +3,7 @@
   --primary-text-color: #212121;
   --titel-text-color: #757575;
   --accent-color: #2196f3;
-  --maket-color: #e5e5e5;
+  --maket-color: #ececec;
   --section-dark-color: #2f303a;
   --color-main-button: #ffffff;
   --bac-color-buttons: #f5f4fa;
@@ -22,7 +22,7 @@ body {
 }
 
 /* Отменяем подчеркивание у ссылки */
-.a {
+.link {
   text-decoration: none;
 }
 
@@ -31,12 +31,21 @@ body {
   list-style: none;
 }
 
+/* ================заменить все на классы========= */
 /* цвет текста заголовков */
-h1,
+
+.features,
+.classes,
+.surname,
+.types-of-jobs {
+  color: var(--primary-text-color);
+}
+/* h1,
 h2,
 h3 {
   color: var(--primary-text-color);
-}
+} */
+/* ======================================== */
 
 /* ====================== header ================= */
 
