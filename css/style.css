@@ -73,7 +73,7 @@ body {
 
   color: var(--primary-text-color);
 }
-
+.activ-list:active,
 .activ-list:focus,
 .activ-list:hover {
   color: var(--accent-color);
@@ -110,7 +110,7 @@ body {
 
   color: var(--titel-text-color);
 }
-.tel-link:hover,
+/* .tel-link:hover, */
 .tel-link:focus {
   color: var(--accent-color);
 }
@@ -203,6 +203,7 @@ specialists .specialists {
 .footer-link {
   color: var(--color-main-button);
 
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   /* letter-spacing: 0.03em; */
