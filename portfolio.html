@@ -1,160 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <title>Home work 2</title>
+    <!-- Нормализатор -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <!-- Шрифт  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <!-- Css style -->
-    
+    <!-- Мои стили -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- Заполняем header -->
     <header class="header">
         <!-- Верхняя линия -->
         <!-- nav - навигация на другие страницы -->
-        <nav>
-            <a class="logo-link link" href="">
-                Web<span style="color: #000000;">Studio</span>
+        <nav class="header-nav">
+            <a class="logo-link link" href="">Web<span style="color: #000000;">Studio</span>
             </a>
-    
-            <ul class="list">
-    
-                <li class="activ link">Студия</li>
-                <li>
-                    <a class="activ-list link" href="./index.html">
-                        Портфолио</a>
+
+            <ul class="menu-list">
+
+                <li class="menu-item list">
+                    <a class="menu-link link header-color-info" href="">Студия</a>
                 </li>
-    
-                <li class="contact-link">Контакты</li>
-    
+
+                <li class="menu-item list">
+                    <a class="menu-link link color-link-nav" href="./portfolio.html">Портфолио</a>
+                </li>
+
+                <li class="menu-item list">
+                    <a class="menu-link link color-link-nav" href="">Контакты</a>
+                </li>
             </ul>
         </nav>
-    
-        <ul class="list">
-            <li>
-                <a class="mail-link link" href="mailto:info@devstudio.com">
-                    info@devstudio.com
+
+        <ul class="menu-list">
+            <li class="menu-item list">
+                <a class="mail-link link header-color-info" href="mailto:info@devstudio.com">info@devstudio.com
                 </a>
             </li>
-    
-            <li>
-                <a class="tel-link link" href="tel:+380961111111">
-                    +38 096 111 11 11
+
+            <li class="menu-item list">
+                <a class="tel-link link color" href="tel:+380961111111">+38 096 111 11 11
                 </a>
             </li>
         </ul>
     </header>
 
-<!--  -->
+    <!-- Заполняем main-->
     <main>
-        <section>
-            <ul class="list">
-                <li><button class="filter-btn" type="button">Все</button>
+
+        <!-- Шапка -->
+        <section class="hero">
+
+            <h1 class="hero-name">
+                Эффективное решение для вашего бизнеса
+            </h1>
+
+            <button class="modal-btn" type="button">
+                Заказать услугу
+            </button>
+
+        </section>
+
+        <!-- Особенности -->
+        <section class="section-work">
+            <ul class="list-section-work">
+                <li class="list">
+                    <h3 class="heading-stction-features heading">
+                        Внимание к деталям
+                    </h3>
+                    <p class="style-under-heading under-heading">
+                        Идеальные изображения, а также начало повседневной работы по формированию позиции.
+                    </p>
                 </li>
-                <li>
-                    <button class="filter-btn" type="button">Веб-сайты</button>
+
+                <li class="list">
+                    <h3 class="heading-stction-features heading">
+                        Пунктуальность
+                    </h3>
+                    <p class="style-under-heading under-heading">
+                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
                 </li>
-                <li>
-                    <button class="filter-btn" type="button">Приложения</button>
+
+                <li class="list">
+                    <h3 class="heading-stction-features heading">
+                        Планирование
+                    </h3>
+                    <p class="style-under-heading under-heading">
+                        Равным образом консультация с широким активом в значительной степени обуславливает.
+                    </p>
                 </li>
-                <li>
-                    <button class="filter-btn" type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button class="filter-btn" type="button">Маркетинг</button>
+
+                <li class="list">
+                    <h3 class="heading-stction-features heading">
+                        Современные технологии
+                    </h3>
+                    <p class="style-under-heading under-heading">
+                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
                 </li>
             </ul>
         </section>
-            
 
-       
-<ul class="list">
-    <li>
-        <img src="./images/portfolio/webSite.jpg" alt="webSite" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Технокряк</h3>
-        <p>Веб-сайт</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/basketball.jpg" alt="basketball" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Постер New Orlean vs Golden Star</h3>
-        <p>Дизайн</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/labell.jpg" alt="label" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Ресторан Seafood</h3>
-        <p>Приложение</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/headphones.jpg" alt="headphones" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Проект Prime</h3>
-        <p class="work">Маркетинг</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/boxes.jpg" alt="boxes" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Проект Boxes</h3>
-        <p class="work">Приложение</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/monitor.jpg" alt="monitor" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Inspiration has no Borders</h3>
-        <p class="work">Веб-сайт</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/magazine.jpg" alt="magazine" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Издание Limited Edition</h3>
-        <p class="work">Дизайн</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/label.jpg" alt="marketing_lab" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Проект LAB</h3>
-        <p class="work">Маркетинг</p>
-    </li>
-    <li>
-        <img src="./images/portfolio/comp.jpg" alt="comp" width="370" height="
-294px">
-        <h3 class="types-of-jobs">Growing Business</h3>
-        <p class="work">Приложение</p>
-    </li>
-</ul>
-        
+        <!-- Чем мы занимаемся -->
+        <section>
+            <h2 class="style-main-heading heading">Чем мы занимаемся</h2>
+            <ul>
+                <li class="list">
+                    <img src="./images/index/box1.jpg" alt="comp" width="370" height="294">
+                </li>
+
+                <li class="list">
+                    <img src="./images/index/phone.jpg" alt="phone" width="370" height="294">
+                </li>
+
+                <li class="list">
+                    <img src="./images/index/apple.jpg" alt="apple" width="370" height="294">
+                </li>
+            </ul>
+        </section>
+
+        <!-- Наша команда -->
+        <section>
+            <h2 class="style-main-heading heading">Наша команда</h2>
+            <ul>
+                <li class="list">
+                    <img src="./images/index/igor.jpg" alt="igor" width="270" height="260">
+                    <h3 class="heading">Игорь Демьяненко</h3>
+                    <p class="style-section-team under-heading">Product Designe</p>
+                </li>
+
+                <li class="list">
+                    <img src="./images/index/olga.jpg" alt="olga" width="270" height="260">
+                    <h3 class="heading">Ольга Репина</h3>
+                    <p class="style-section-team under-heading">Frontend Develope</p>
+                </li>
+
+                <li class="list">
+                    <img src="./images/index/nikolay.jpg" alt="nokolay" width="270" height="260">
+                    <h3 class="heading">Николай Тарасов</h3>
+                    <p class="style-section-team under-heading">Marketing</p>
+                </li>
+
+                <li class="list">
+                    <img src="./images/index/mihail.jpg" alt="mihail" width="270" height="260">
+                    <h3 class="heading">Михаил Ермаков</h3>
+                    <p class="style-section-team under-heading">UI Designer</p>
+                </li>
+            </ul>
+        </section>
     </main>
 
-<!-- footer -->
-<footer class="site-footer">
-    <a class="logo-link link" href="./index.html" lang="en">
-        Web<span style="color: #ffffff">Studio</span>
-    </a>
-    <address class="footer-adres">
-        <ul class="list">
-            <li>
-                <a class="link footer-link" href="https://goo.gl/maps/GLm2jWPZ9G5UtM699" target="_blank"
-                    rel="noreferrer noot">
-                    г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li>
-                <a class="footer-contact a" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li>
-                <a class="footer-contact a" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-        </ul>
-        <br>
+    <!-- footer -->
+    <footer class="site-footer">
+        <a class="logo-link link" href="./index.html" lang="en">
+            Web<span style="color: #ffffff">Studio</span>
+        </a>
 
-    </address>
-</footer>
+        <address class="footer-adres">
+
+            <ul class="list">
+                <li>
+                    <a class="footer-link link" href="https://goo.gl/maps/GLm2jWPZ9G5UtM699" target="_blank"
+                        rel="noreferrer noot">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </a>
+                </li>
+
+                <li>
+                    <a class="footer-link link" href="mailto:info@example.com">
+                        info@example.com
+                    </a>
+                </li>
+
+                <li>
+                    <a class="footer-link link" href="tel:+380991111111">
+                        +38 099 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </footer>
 </body>
+
 </html>
