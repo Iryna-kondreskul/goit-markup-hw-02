@@ -17,12 +17,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*  текущая страничка активна*/
-.header .activ-list .footer-contact {
-  color: var(--accent-color);
-}
-
-/* Отменяем подчеркивание у ссылки */
+/* ======================== COMPONENTS ===========================================*/
+/*Отменяем подчеркивание у ссылок */
 .link {
   text-decoration: none;
 }
@@ -31,98 +27,75 @@ body {
 .list {
   list-style: none;
 }
-/* ==================== COMPONENTS ====================================== */
 
 /* цвет текста заголовков */
-
-.features,
-.classes,
-.surname,
-.types-of-jobs {
+.heading,
+.heading-list-portfolio {
   color: var(--primary-text-color);
 }
 
+/* цвет параграфов */
+.under-heading,
+.under-heading-portfilio {
+  color: var(--titel-text-color);
+}
+
+/* цвет фона для шапки и футера */
+.hero,
+.site-footer {
+  background-color: var(--section-dark-color);
+}
+/* ========================= END COMPONENTS================================*/
+/* ========================== HEADER ================================ */
 /* WebStudio */
 .logo-link {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* letter-spacing: 0.03em; */
   color: var(--accent-color);
 }
-/* ================= END COMPONENTS ====================================== */
-
-/* ====================== header ================= */
-
-/* Активная ссылка - студия */
-.activ {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+.header-color-info {
   color: var(--accent-color);
 }
-/*  Портфолио  */
-.activ-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+.color-link-nav {
   color: var(--primary-text-color);
 }
-.activ-list:active,
-.activ-list:focus,
-.activ-list:hover {
-  color: var(--accent-color);
-}
-
-/* Контакты */
-.contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
-}
-.contact-link:focus,
-.contact-link:hover {
-  color: var(--accent-color);
-}
-/* E-mail */
-.mail-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--accent-color);
-}
-/* Tel */
 .tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   color: var(--titel-text-color);
 }
-/* .tel-link:hover, */
-.tel-link:focus {
+/* стиль для li */
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Ссылка активная */
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
   color: var(--accent-color);
 }
-/*  ==================== end header ==============*/
 
-/* ===================== main  =================  */
-.site-main {
-  background-color: var(--section-dark-color);
+.mail-link:active,
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--accent-color);
 }
 
-/* Эффективные решения для вашего бизнеса */
-.efect {
+.tel-link:hover,
+.tel-link:focus,
+.tel-link:active {
+  color: var(--accent-color);
+}
+
+/* ================================ END HEADER ================================== */
+
+/* =================================MAIN========================================== */
+/* Эффективное решение для вашего бизнеса */
+.hero-name {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -133,8 +106,7 @@ body {
 
   color: var(--color-main-button);
 }
-
-/* Заказать услугу */
+/* Кнопка */
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
@@ -150,114 +122,70 @@ body {
   border: transparent;
 }
 
-/* Внимание к деталям */
-.features {
+/* <!-- Особенности --> */
+.heading-stction-features {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
 }
 
-/* Описание  */
-.description {
-  font-size: 14px;
-  line-height: 1.71;
-
-  /* letter-spacing: 0.03em; */
-
-  color: var(--titel-text-color);
-}
-
-/* /* Чем мы занимаемся */
-.classes {
+/*<!-- стиль для заголовков секции "Чем мы занимаемся" и "Наша команда"-->*/
+.style-main-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  /* letter-spacing: 0.03em; */
 }
 
-/* surname */
-.surname {
+/* Стиль для параграфов из секции "Особенности"*/
+.style-under-heading {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Стиль для заголовкой из секции "Наша команда" */
+.style-section-heading-team {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19px;
-
-  /* text-align: center; */
-  /* letter-spacing: 0.03em; */
-}
-specialists .specialists {
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
-  /* letter-spacing: 0.03em; */
-}
-/* =================== end main =================*/
-
-/* =================== footer ===================*/
-/* address */
-.site-footer {
-  background-color: var(--section-dark-color);
 }
 
+/* Стиль для параграфов из секции "Наша команда" */
+.style-section-team {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+/* ==================================== END MAIN ==================================== */
+
+/* ============================== FOOTER ========================================= */
 .footer-link {
   color: var(--color-main-button);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* letter-spacing: 0.03em; */
+
   text-decoration: none;
 }
 .footer-link:focus,
 .footer-link:hover {
   color: var(--accent-color);
 }
+/* ================================== END FOOTER ============================= */
 
-.footer-contact {
-  color: var(--color-main-button);
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* letter-spacing: 0.03em; */
-  text-decoration: none;
-}
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
-}
-/* =================== end footer ============= */
-
-/* ================ main portfolio ================= */
-/* виды работ */
-.types-of-jobs {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-}
-/* work */
-.work {
-  font-size: 16px;
-  line-height: 1.9;
-
-  /* letter-spacing: 0.03em; */
-
-  color: var(--titel-text-color);
-}
-
-/* кнопки */
+/* ================================== PORTFOLIO ========================= */
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 
   text-align: center;
-  /* letter-spacing: 0.03em; */
+
   /* прозрачность */
   background-color: transparent;
 
@@ -271,4 +199,18 @@ specialists .specialists {
   color: var(--bac-color-buttons);
 }
 
-/* ================ end main portfolio ================= */
+/* стиль для залоговков списков */
+.heading-list-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+/*Стиль для параграфов списка */
+.under-heading-portfilio {
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* =============================== END PORTFOLIO ======================= */
